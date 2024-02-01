@@ -66,11 +66,11 @@ Simplifying date manipulation in R and Python sqllite
 
     /************************************************************************************************************************/
     /*                                                                                                                      */
-    /*              INPUT (PROCESSED RAW INPUT (ADDED NUMBER OD SECONdS SINCE 1-1-1970)                                     */
+    /*              INPUT (PROCESSED RAW INPUT (ADDED NUMBER OF SECONDS SINCE 1-1-1970)                                     */
     /*              ===================================================================                                     */
     /*                                                                                                                      */
     /*  CHARACTER DATES HAVE BEEN COVERTED TO NUMBER OF SECONDS SINCE 1-01-1970                                             */
-    /*                                                                                                                      */
+    /*                                               ======= ADDED=======                                                   */
     /*  PATIENT  AETERM      STDT       ENDT      NUM_STDT  NUM_VISDT   NUM_ENDT                                            */
     /*                                                                                                                      */
     /* 0  1002  FOOTPAIN  2015-05-28  2015-05-30 1432771200 1432684800 1432944000                                           */
@@ -100,7 +100,7 @@ Simplifying date manipulation in R and Python sqllite
     /*                                                                                                                      */
     /*                                                                                                                      */
     /*            OUTPUT Converting days since 1-1-1970 to character dates)                                                 */
-    /*            ======                                                                                                    */
+    /*            =========================================================                                                 */
     /*                                                                                                                      */
     /*                                              STDT_                               STDT_   WINDOW                      */
     /*                                             MINUS_                STDT_PLUS_   PLUS_1_   DAYS_ENDT_                  */
@@ -156,12 +156,7 @@ Simplifying date manipulation in R and Python sqllite
     | |_) | | |  __/ |_) | | | (_) | (_|  __/\__ \__ \ | |    | |_) | |_| | |_| | | | (_) | | | |
     | .__/|_|  \___| .__/|_|  \___/ \___\___||___/___/ |_|    | .__/ \__, |\__|_| |_|\___/|_| |_|
     |_|            |_|                                        |_|    |___/
-                 _   _
-     _ __  _   _| |_| |__   ___  _ __
-    | `_ \| | | | __| `_ \ / _ \| `_ \
-    | |_) | |_| | |_| | | | (_) | | | |
-    | .__/ \__, |\__|_| |_|\___/|_| |_|
-    |_|    |___/
+    
     */
 
     /*----                                                                   ----*/
